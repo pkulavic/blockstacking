@@ -1,4 +1,13 @@
-<h1>Parker's Physics Project</h1>
+<a href='/'><h1>Parker's Physics Project</h1></a>
 <h1>The Block Stacking Problem</h1>
 
-<p> Block length: </p>
+<h3><u>Total Overhang</u></h3>
+<form method="POST">
+  {% csrf_token %}
+  {{ TotalOverhang.as_p }}
+  <button type="submit">Submit</button>
+</form>
+
+{% if totaloverhang %}
+<p style="color: red">{{ totaloverhang }}</p>
+{% endif %}
