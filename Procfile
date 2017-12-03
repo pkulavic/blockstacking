@@ -1,1 +1,1 @@
-web: gunicorn blockstacking.blockstacking.wsgi --log-file -
+web: gunicorn blockstacking.wsgi --log-file -
